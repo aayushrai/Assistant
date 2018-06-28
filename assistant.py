@@ -55,7 +55,7 @@ def main(command):           # just use if else command
                 talker("do you wanna send it or change it ")
                 decision = listener_fun()
                 if "send it" in decision:
-                    email('www.aayushrai@gmail.com',reciver,subject,massage) # use google api for email
+                    email('sender email',reciver,subject,massage) # use google api for email
                     print('email send')
                     break
                 elif 'change it' in decision:
