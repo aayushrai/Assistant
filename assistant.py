@@ -40,7 +40,10 @@ def main(command):           # just use if else command
                 webbrowser.open("https://www.facebook.com/")     # open fb url
                 break
 
-            if "email to ankit" in heycmd:                      # here you can use any api as your use
+            if "send email" in heycmd:     # here you can use any api as your use
+                print("sender email")
+                talker("who do you want to send email")
+                reciver = listener_fun()
                 print("subject")
                 talker("what's a subject")
                 subject = listener_fun()
@@ -52,7 +55,7 @@ def main(command):           # just use if else command
                 talker("do you wanna send it or change it ")
                 decision = listener_fun()
                 if "send it" in decision:
-                    email('www.aayushrai@gmail.com','akasrniya@gmail.com',subject,massage) # use google api for email
+                    email('www.aayushrai@gmail.com',reciver,subject,massage) # use google api for email
                     print('email send')
                     break
                 elif 'change it' in decision:
